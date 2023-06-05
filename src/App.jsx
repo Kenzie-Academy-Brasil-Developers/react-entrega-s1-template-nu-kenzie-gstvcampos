@@ -5,7 +5,7 @@ import { Form } from './components/Form'
 import { GlobalReset } from './styles/reset';
 import { StyledContainer } from './styles/grid';
 import { ListSection } from './components/ListSection';
-import { TotalMoney } from './components/ListSection/TotalMoney'
+import { TotalMoney } from './components/ListSection/TotalMoney';
 
 
 function App() {
@@ -19,16 +19,15 @@ function App() {
 
       <Header />
       <StyledContainer>
-        <StyledContainer>
-          <Form setNoteList={setNoteList} />
-          <TotalMoney noteList={noteList} />
-        </StyledContainer>
-        <StyledContainer>
+          <div>
+            <Form setNoteList={setNoteList} />
+            <TotalMoney className="total" noteList={noteList}/>
+          </div>
           <ListSection noteList={noteList} setNoteList={setNoteList} />
-        </StyledContainer>
       </StyledContainer>
     </>
   )
 }
+
 
 export default App

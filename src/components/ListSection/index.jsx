@@ -1,5 +1,6 @@
 import { StyledTitle2, StyledTitle3 } from "../../styles/typography"
 import { NoteList } from "./NoteList"
+import { TotalMoney } from "./TotalMoney"
 
 export const ListSection = ({ noteList, setNoteList }) => {
     return (

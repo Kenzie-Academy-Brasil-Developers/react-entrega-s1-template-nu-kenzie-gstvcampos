@@ -4,7 +4,7 @@ import { StyledSection } from "./styles"
 
 export const TotalMoney = ({ noteList }) => {
 
-    let amount = noteList.reduce((acc, note) => {
+    const amount = noteList.reduce((acc, note) => {
 
         if (note.type === 'entrada') {
             return acc + parseFloat(note.value);
@@ -15,7 +15,7 @@ export const TotalMoney = ({ noteList }) => {
         return acc
     }, 0);
 
-    let formattedAmount = amount.toLocaleString("pt-BR", {
+    const formattedAmount = amount.toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL",
       });

@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     max-width: 100%;
-    .flexBox{
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+
+    .flexbox {
+        height: 90px;
         display: flex;
         align-items: center;
-        height: 90px;
     }
 `

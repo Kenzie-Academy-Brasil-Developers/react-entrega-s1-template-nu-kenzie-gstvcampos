@@ -1,4 +1,5 @@
 import { NoteCard } from "./Card"
+import { StyledUl } from "./styles"
 
 
 export const NoteList = ({noteList, setNoteList}) => {
@@ -10,8 +11,8 @@ export const NoteList = ({noteList, setNoteList}) => {
     }
 
     return (
-        <ul>
+        <StyledUl>
             {noteList.map((note) => <NoteCard key={note.id} note={note} removeNoteFromList={removeNoteFromList}/> )}
-        </ul>
+        </StyledUl>
     )
 }
