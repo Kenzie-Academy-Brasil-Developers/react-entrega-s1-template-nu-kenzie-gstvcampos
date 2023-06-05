@@ -18,7 +18,7 @@ export const StyledTitle3 = styled.h3`
     font-family: var(--Font-Primary);
     font-size: 1rem;
     font-weight: 700;    
-    color: var(--Color-Gray-4);  
+    color: ${props => props.color === 'primary' ? 'var(--Color-primary)' : 'var(--Color-Gray-4)'};
 `
 export const StyledTitle4 = styled.h4`
     font-family: var(--Font-Primary);

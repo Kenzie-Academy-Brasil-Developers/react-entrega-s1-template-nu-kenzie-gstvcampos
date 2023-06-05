@@ -4,19 +4,29 @@ import { Header } from './components/Header'
 import { Form } from './components/Form'
 import { GlobalReset } from './styles/reset';
 import { StyledContainer } from './styles/grid';
+import { ListSection } from './components/ListSection';
+import { TotalMoney } from './components/ListSection/TotalMoney'
+
 
 function App() {
 
+  const [noteList, setNoteList] = useState([])
+
   return (
     <>
-      <GlobalReset/>
-      <GlobalStyles/>
+      <GlobalReset />
+      <GlobalStyles />
 
-      <Header/>
+      <Header />
       <StyledContainer>
-        <Form/>
+        <StyledContainer>
+          <Form setNoteList={setNoteList} />
+          <TotalMoney noteList={noteList} />
+        </StyledContainer>
+        <StyledContainer>
+          <ListSection noteList={noteList} setNoteList={setNoteList} />
+        </StyledContainer>
       </StyledContainer>
-
     </>
   )
 }
