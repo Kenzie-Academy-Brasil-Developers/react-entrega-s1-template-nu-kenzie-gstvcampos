@@ -6,7 +6,6 @@ export const StyledForm = styled.form`
     gap: 1rem;
     padding: 30px;
 
-    width: 250px;
     max-width: 100%;
 
     border: 1px solid rgba(0, 0, 0, 0.2);

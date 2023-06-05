@@ -1,4 +1,4 @@
-import { NoteCard } from "./Card"
+import { NoteCard } from "../Card"
 import { StyledUl } from "./styles"
 
 

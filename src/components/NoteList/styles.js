@@ -7,7 +7,6 @@ export const StyledUl = styled.ul`
     gap: .9375rem;
     margin-top: 30px;
 
-    max-width: 100%;
-    width: 560px;
+    width: 100%;
 `
 

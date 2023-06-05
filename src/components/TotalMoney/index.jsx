@@ -1,4 +1,4 @@
-import { StyledBody, StyledTitle3 } from "../../../styles/typography"
+import { StyledBody, StyledTitle3 } from "../../styles/typography"
 import { StyledSection } from "./styles"
 
 

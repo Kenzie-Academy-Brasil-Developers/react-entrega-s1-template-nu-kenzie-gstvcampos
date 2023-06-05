@@ -1,5 +1,5 @@
-import { StyledDeleteButton } from "../../../../styles/button";
-import { StyledBody, StyledTitle3 } from "../../../../styles/typography"
+import { StyledDeleteButton } from "../../styles/button";
+import { StyledBody, StyledTitle3 } from "../../styles/typography"
 import { StyledCard } from "./styles"
 
 export const NoteCard = ({note, removeNoteFromList}) => {
