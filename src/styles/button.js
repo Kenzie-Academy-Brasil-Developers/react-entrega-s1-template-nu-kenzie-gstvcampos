@@ -18,3 +18,22 @@ export const StyledButton = styled.button`
 }
 `
 
+export const StyledDeleteButton = styled.button`
+    font-family: var(--Font-Primary);
+    color: var(--Color-Gray-4);  
+    font-size: .625rem;
+    font-weight: 400;   
+
+    border-radius: .125rem;
+    border: .0625rem solid var(--Color-Grey-2);
+    background-color: var(--Color-Grey-2);
+
+    padding: .1875rem .5625rem;
+
+    :hover {
+        border: .0625rem solid var(--Color-Gray-4);
+        background-color: var(--Color-Gray-4);
+        color: var(--Color-Grey-2);  
+}
+`
+

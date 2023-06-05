@@ -1,3 +1,4 @@
+import { StyledDeleteButton } from "../../../../styles/button";
 import { StyledBody, StyledTitle3 } from "../../../../styles/typography"
 import { StyledCard } from "./styles"
 
@@ -17,7 +18,7 @@ export const NoteCard = ({note, removeNoteFromList}) => {
             </div>
             <div>
                 <StyledBody>{formattedValue}</StyledBody>
-                <button onClick={() => removeNoteFromList(note.id)}>Excluir</button>
+                <StyledDeleteButton onClick={() => removeNoteFromList(note.id)}>Excluir</StyledDeleteButton>
             </div>
         </StyledCard>
     )
