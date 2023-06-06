@@ -20,7 +20,6 @@ export const StyledContainer = styled.div`
     }
 
     @media screen and (max-width: 999px){
-        padding: 1rem;
         justify-content: center;
     }
 `

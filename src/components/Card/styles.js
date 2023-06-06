@@ -20,4 +20,12 @@ export const StyledCard = styled.li`
         flex-direction: column;
         padding: 18px;
     }
+
+    @media screen and (max-width: 600px){
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 350px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 `
