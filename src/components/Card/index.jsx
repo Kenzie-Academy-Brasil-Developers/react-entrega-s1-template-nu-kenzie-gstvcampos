@@ -4,6 +4,7 @@ import { StyledCard } from "./styles"
 
 export const NoteCard = ({note, removeNoteFromList}) => {
 
+    // nao sei porque nao esta funcionando
     const value = note.value
     const formattedValue = value.toLocaleString("pt-BR", {
         style: "currency",
