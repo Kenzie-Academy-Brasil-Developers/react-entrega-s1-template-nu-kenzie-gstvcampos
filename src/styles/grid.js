@@ -5,12 +5,16 @@ export const StyledContainer = styled.div`
     flex-wrap: wrap;
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     gap: 60px;
 
     margin: 0 auto;
     margin-bottom: 40px;
 
+    .form__conteiner {
+        width: 355px;
+        max-width: 100%;
+    }
     section > h3 {
         margin-bottom: 32px;
     }

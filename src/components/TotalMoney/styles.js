@@ -8,8 +8,7 @@ export const StyledSection = styled.section`
     gap: .375rem;
     padding: 20px;
 
-    width: 420px;
-    /* max-width: 270px; */
+    max-width: 100%;
 
     border: 1px solid rgba(0, 0, 0, 0.2);
 

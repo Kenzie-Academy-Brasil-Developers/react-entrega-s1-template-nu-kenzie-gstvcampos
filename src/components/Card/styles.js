@@ -8,8 +8,7 @@ export const StyledCard = styled.li`
     background-color: var(--Color-Grey-1);
 
 
-    width: 450px;
-    max-width: 100%;
+    width: 100%;
 
     ${({ type }) => type === "entrada" && "border-left: 4px solid var(--Color-Secondary);"}
     ${({ type }) => type === "saida" && "border-left: 4px solid var(--Color-Grey-2);"}

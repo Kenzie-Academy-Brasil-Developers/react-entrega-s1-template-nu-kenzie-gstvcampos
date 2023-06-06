@@ -16,12 +16,13 @@ function App() {
     <>
       <GlobalReset />
       <GlobalStyles />
-
       <Header />
       <StyledContainer>
-          <div>
+          <div className='form__conteiner'>
             <Form setNoteList={setNoteList} />
-            <TotalMoney className="total" noteList={noteList}/>
+            {noteList.length > 0 ? (
+              <TotalMoney className="total" noteList={noteList}/>
+            ) : (<></>)}
           </div>
           <ListSection noteList={noteList} setNoteList={setNoteList} />
       </StyledContainer>
