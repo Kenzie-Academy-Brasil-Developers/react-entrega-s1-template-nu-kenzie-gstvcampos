@@ -28,7 +28,8 @@ export const StyledDeleteButton = styled.button`
     border: .0625rem solid var(--Color-Grey-2);
     background-color: var(--Color-Grey-2);
 
-    padding: .1875rem .5625rem;
+    width: 50px;
+    height: 20px;
 
     :hover {
         border: .0625rem solid var(--Color-Gray-4);

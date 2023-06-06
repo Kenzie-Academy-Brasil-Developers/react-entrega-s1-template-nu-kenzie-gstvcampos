@@ -6,21 +6,28 @@ import { v4 as uuidv4 } from 'uuid'
 
 
 export const Form = ({ setNoteList }) => {
-    const [description, setDescription] = useState()
-    const [value, setValue] = useState()
-    const [type, setType] = useState()
+    const [formData, setFormData] = useState({
+        description: "",
+        value: "",
+        type: "",
+        id: "",
+    })
 
     const addNoteToList = () => {
-        const newNote = { id: uuidv4(), description, value, type }
+        const newNote = { ...formData, id: uuidv4()}
         setNoteList((noteList) => [...noteList, newNote])
     }
 
     const submit = (e) => {
         e.preventDefault()
         addNoteToList()
-        setDescription("")
-        setValue("")
-        setType("")
+        setFormData({
+            description: "",
+            value: "",
+            type: "",
+            id: "",
+        })
+
     }
 
     return (
@@ -31,8 +38,8 @@ export const Form = ({ setNoteList }) => {
                 type="text"
                 placeholder="Digite aqui sua descrição"
                 required
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
+                value={formData.description}
+                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
             />
 
             <StyledLaber htmlFor="value">Valor (R$)</StyledLaber>
@@ -41,18 +48,17 @@ export const Form = ({ setNoteList }) => {
                 type="number"
                 placeholder="R$ 00.00"
                 required
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
+                value={formData.value}
+                onChange={(e) => setFormData({ ...formData, value: e.target.value })}
             />
 
             <StyledLaber htmlFor="type">Tipo de valor</StyledLaber>
-            <StyledSelect required name="type" id="type" value={type} onChange={(e) => setType(e.target.value)}>
+            <StyledSelect required name="type" id="type" value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })}>
                 <option value="">Selecione uma opção</option>
                 <option value="entrada">Entrada</option>
                 <option value="saida">Saida</option>
             </StyledSelect>
             <StyledButton type="submit">Enviar Valor</StyledButton>
         </StyledForm>
-
     )
 }
